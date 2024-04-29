@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 from skimage.transform import resize, pyramid_reduce
 from PIL import Image
-import Time
+#import Time
 
 model = load_model('CNNmodel.h5')
 
