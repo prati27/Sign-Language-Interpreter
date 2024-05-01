@@ -53,7 +53,7 @@ def main():
 
 
         cv2.rectangle(image_frame, (300, 300), (600, 600), (255, 255, 00), 3)
-        cv2.imshow('video, image_frame')
+        cv2.imshow('video', image_frame)
 
         if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
@@ -61,3 +61,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+cam_capture.release()
+cv2.destroyAllWindows()
